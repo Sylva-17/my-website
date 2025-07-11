@@ -1,0 +1,131 @@
+body{
+  background:#cac7ff;
+  
+
+}
+
+main{
+  background:#bee2ff;
+  width:300px;
+  height:360px;
+  margin:auto;
+  margin-top:150px;
+  border:2px solid white;
+  
+}
+
+
+
+.plate{
+  background:#5e62a9;
+  width: 230px;
+  height: 10px;
+  border-radius: 0% 0% 50% 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:0px;
+  
+  box-shadow: 50px 10px 11px rgba(0, 0, 0, 0.2);
+  
+}
+.cake{
+  margin-top:50px;
+  margin-bottom:1px;
+}
+
+  
+.layer{
+  background:#f2dde1;
+  width:130px;
+  height:40px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  margin-top:0px;
+  border-radius:50% 50% 0% 0% ;
+  
+}
+
+
+.seclayer{
+  background:#e094a0;
+  width:170px;
+  height:50px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0px;
+  margin-bottom:0px;
+  border-radius: 25% 25% 0% 0%;
+}
+
+.thlayer{
+  background:#c45161;
+  width:209px;
+  height:60px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 0px;
+  margin-top:0px;
+  border-radius: 25% 25% 0% 0%
+}
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.happy{
+  text-align:center;
+}
+
+.candle{
+  background:white;
+  width:4px;
+  height:29px;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative; 
+  top:50px;
+}
+
+.flame{
+  background:orange;
+  width:6px;
+  height:10px;
+  position: relative; 
+  top:-10px;
+}
+
+.flame2{
+  background:yellow;
+  width:3px;
+  height:6px;
+  position: relative; 
+  top:-17px;
+}
+
+@keyframes flame-flicker {
+  0%, 100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(1px) translateY(-2px) scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Animation sur la flamme orange */
+.flame {
+  animation: flame-flicker 1s infinite ease-in-out;
+  border-radius: 50% 50% 50% 50%; /* pour une forme plus naturelle */
+}
+
+/* Animation sur la flamme jaune plus petite */
+.flame2 {
+  animation: flame-flicker 1s infinite ease-in-out;
+  animation-delay: 0.3s; /* décalage pour un effet plus naturel */
+  border-radius: 50% 50% 50% 50%;
+}
+ /*la pre partie fini ici*/
+
+/* Style de la crème (sur la dernière couche .thlayer) */
